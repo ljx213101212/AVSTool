@@ -52,9 +52,9 @@ class AuthManager{
             if (refreshToken) {
               this.setRefreshToken(refreshToken);
             }
+          }else{
+            return reject();
           }
-    
-          return reject();
         });
     }
 
@@ -104,11 +104,9 @@ class AuthManager{
       return new Promise((resolve, reject) => {
         const query = qs.parse(window.location.search.substr(1));
         const code = query.code;
-  
         if (code) {
           return resolve(code);
         }
-  
         return reject(null);
       });
     }
