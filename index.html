@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>Alexa Voice Service demo</title>
+
+  <style>
+  body{
+    border: 1px solid red;
+  }
+  </style>
+</head>
+
+<body>
+
+  <ul id="log"></ul>
+  <ul id="audioLog"></ul>
+	
+	<script>
+	var logOutput = document.getElementById('log');
+	function log(message) {
+		logOutput.innerHTML = message;
+  }
+  </script>
+  
+  <script src="dist/main.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,38 @@
+{
+  "name": "AVSDemo",
+  "version": "1.0.0",
+  "description": "An demo app of AVS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "connect": "^3.6.6",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "http-message-parser": "0.0.20",
+    "multer": "^1.1.0",
+    "request": "^2.72.0",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^7.2.0",
+    "nodemon": "^1.18.10",
+    "watchify": "^3.7.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
